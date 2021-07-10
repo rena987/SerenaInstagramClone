@@ -21,8 +21,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SerenaInstagramClone">
-        <activity android:name=".FeedActivity"></activity>
-        <activity android:name=".ComposeActivity" />
+        <activity android:name=".FeedDetailActivity"></activity>
+        <activity android:name=".FeedFragment" />
+        <activity android:name=".ComposeFragment" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>

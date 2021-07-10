@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="20dp"
-        tools:context=".ComposeActivity">
+        tools:context=".ComposeFragment">
 
         <EditText
             android:id="@+id/etDescription"
