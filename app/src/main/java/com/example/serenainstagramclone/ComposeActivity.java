@@ -14,7 +14,6 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.serenainstagramclone.databinding.ActivityComposeBinding;
@@ -123,7 +122,7 @@ public class ComposeActivity extends AppCompatActivity {
 
     private void savePost(String description, ParseUser currentUser, File photoFile) {
         Post post = new Post();
-        post.setKeyDescription(description);
+        post.setDescription(description);
         post.setImage(new ParseFile(photoFile));
         post.setUser(currentUser);
         post.saveInBackground(new SaveCallback() {
@@ -152,7 +151,7 @@ public class ComposeActivity extends AppCompatActivity {
                 }
 
                 for (Post post : objects) {
-                    Log.i(TAG, "Post: " + post.getKeyDescription() + ", username: " + post.getUser().getUsername());
+                    Log.i(TAG, "Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
                 }
             }
         });
